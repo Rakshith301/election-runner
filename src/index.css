@@ -14,17 +14,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 221.2 83.2% 53.3%;
+    --primary: 217.2 91.2% 59.8%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 262.1 83.3% 57.8%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 214.3 31.8% 91.4%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 160.1 84.1% 39.4%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -58,13 +58,13 @@
     --primary: 217.2 91.2% 59.8%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 262.1 83.3% 57.8%;
+    --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 160.1 84.1% 39.4%;
+    --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -87,7 +87,7 @@
 }
 
 .vote-gradient {
-  background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+  background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
 }
 
 .vote-card-hover {
@@ -96,16 +96,16 @@
 
 .vote-card-hover:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1), 0 8px 10px -6px rgba(139, 92, 246, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.2), 0 8px 10px -6px rgba(59, 130, 246, 0.1);
 }
 
 .vote-shadow {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 12px -2px rgba(59, 130, 246, 0.15);
 }
 
 /* New styles */
 .page-header {
-  @apply mb-8 pb-4 border-b border-indigo-100;
+  @apply mb-8 pb-4 border-b border-blue-100;
 }
 
 .card-gradient {
@@ -113,11 +113,11 @@
 }
 
 .dashboard-card {
-  @apply bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-lg border border-indigo-50;
+  @apply bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-lg border border-blue-100;
 }
 
 .active-election-badge {
-  @apply bg-green-100 text-green-800 px-2 py-0.5 rounded-full text-xs font-medium;
+  @apply bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full text-xs font-medium;
 }
 
 .ended-election-badge {
@@ -125,24 +125,53 @@
 }
 
 .voted-badge {
-  @apply bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full text-xs font-medium;
+  @apply bg-green-100 text-green-800 px-2 py-0.5 rounded-full text-xs font-medium;
 }
 
 /* Button styles */
 .btn-primary {
-  @apply bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg px-4 py-2 transition-colors;
+  @apply bg-blue-600 hover:bg-blue-700 text-white rounded-lg px-4 py-2 transition-colors;
 }
 
 .btn-secondary {
-  @apply bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg px-4 py-2 transition-colors;
+  @apply bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-lg px-4 py-2 transition-colors;
 }
 
 /* Card styles */
 .feature-card {
-  @apply p-6 bg-white rounded-xl shadow-md border border-indigo-50 hover:shadow-lg transition-all duration-300;
+  @apply p-6 bg-white rounded-xl shadow-md border border-blue-100 hover:shadow-lg transition-all duration-300;
 }
 
 /* Input styles */
 .input-field {
-  @apply border border-gray-300 rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all;
+  @apply border border-blue-200 rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all;
+}
+
+/* Logo animation */
+.logo-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Gradient backgrounds */
+.blue-gradient {
+  @apply bg-gradient-to-r from-blue-500 to-blue-400;
+}
+
+.blue-gradient-light {
+  @apply bg-gradient-to-r from-blue-100 to-blue-50;
 }

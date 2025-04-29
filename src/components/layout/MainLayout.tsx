@@ -16,10 +16,10 @@ const MainLayout = ({ children, requireAuth = false }: MainLayoutProps) => {
   // Show loading state
   if (isLoading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-50 to-blue-100">
+      <div className="flex min-h-screen items-center justify-center bg-gradient-to-r from-blue-500 to-blue-400">
         <div className="flex flex-col items-center space-y-4">
-          <div className="h-16 w-16 rounded-full border-4 border-t-vote-blue border-r-vote-purple border-b-vote-green border-l-transparent animate-spin"></div>
-          <p className="text-lg font-medium text-gray-800">Loading...</p>
+          <div className="h-16 w-16 rounded-full border-4 border-t-white border-r-white border-b-white border-l-transparent animate-spin"></div>
+          <p className="text-lg font-medium text-white">Loading...</p>
         </div>
       </div>
     );
@@ -31,10 +31,10 @@ const MainLayout = ({ children, requireAuth = false }: MainLayoutProps) => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-indigo-50 to-blue-100">
+    <div className="min-h-screen flex flex-col bg-gradient-to-r from-blue-500 to-blue-400">
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-8 md:px-8 max-w-7xl">
-        <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+        <div className="bg-white rounded-xl shadow-lg p-6 border border-blue-100">
           {children}
         </div>
       </main>
@@ -47,13 +47,13 @@ const MainLayout = ({ children, requireAuth = false }: MainLayoutProps) => {
               </p>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-500 hover:text-vote-blue text-sm transition-colors">
+              <a href="#" className="text-gray-500 hover:text-blue-500 text-sm transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-500 hover:text-vote-blue text-sm transition-colors">
+              <a href="#" className="text-gray-500 hover:text-blue-500 text-sm transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-500 hover:text-vote-blue text-sm transition-colors">
+              <a href="#" className="text-gray-500 hover:text-blue-500 text-sm transition-colors">
                 Contact
               </a>
             </div>
