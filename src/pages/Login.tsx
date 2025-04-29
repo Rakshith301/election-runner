@@ -36,8 +36,8 @@ const Login = () => {
           <CardHeader className="space-y-1 flex flex-col items-center">
             <div className="flex items-center space-x-2">
               <Vote className="h-8 w-8 text-vote-blue" />
-              <CardTitle className="text-2xl font-bold bg-clip-text text-transparent vote-gradient">
-                Vote Central
+              <CardTitle className="text-2xl font-bold bg-clip-text text-black">
+                Election Runner
               </CardTitle>
             </div>
             <CardDescription className="text-center">
