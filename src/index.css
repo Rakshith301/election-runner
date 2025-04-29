@@ -105,15 +105,15 @@
 
 /* New styles */
 .page-header {
-  @apply mb-8 pb-4 border-b;
+  @apply mb-8 pb-4 border-b border-indigo-100;
 }
 
 .card-gradient {
-  @apply bg-gradient-to-br from-white to-gray-50;
+  @apply bg-gradient-to-br from-white to-blue-50;
 }
 
 .dashboard-card {
-  @apply bg-white rounded-lg shadow-sm p-6 transition-all duration-300 hover:shadow-md;
+  @apply bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-lg border border-indigo-50;
 }
 
 .active-election-badge {
@@ -126,4 +126,23 @@
 
 .voted-badge {
   @apply bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full text-xs font-medium;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg px-4 py-2 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg px-4 py-2 transition-colors;
+}
+
+/* Card styles */
+.feature-card {
+  @apply p-6 bg-white rounded-xl shadow-md border border-indigo-50 hover:shadow-lg transition-all duration-300;
+}
+
+/* Input styles */
+.input-field {
+  @apply border border-gray-300 rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all;
 }
