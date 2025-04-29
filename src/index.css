@@ -102,3 +102,28 @@
 .vote-shadow {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+
+/* New styles */
+.page-header {
+  @apply mb-8 pb-4 border-b;
+}
+
+.card-gradient {
+  @apply bg-gradient-to-br from-white to-gray-50;
+}
+
+.dashboard-card {
+  @apply bg-white rounded-lg shadow-sm p-6 transition-all duration-300 hover:shadow-md;
+}
+
+.active-election-badge {
+  @apply bg-green-100 text-green-800 px-2 py-0.5 rounded-full text-xs font-medium;
+}
+
+.ended-election-badge {
+  @apply bg-gray-100 text-gray-800 px-2 py-0.5 rounded-full text-xs font-medium;
+}
+
+.voted-badge {
+  @apply bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full text-xs font-medium;
+}
